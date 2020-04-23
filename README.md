@@ -1,11 +1,22 @@
 # CertifyRDGAutomation
 Automates Certificate Renewal in Remote Desktop Gateway using Certify
 
-Do you use Remote Desktop Gateway without a Remote Desktop Services Broker / Session hosts? 
+When you configure a Remote Desktop Environment, typically the deployment consists of:
+- Remote Desktop Gateway
+- Remote Desktop Broker
+- Remote Desktop Licensing
+- Remote Desktop Session Host
 
-Do you also use Let's Encrypt to generate SSL Certificates? 
+When configuring in this "Default configuration" using a Broker, a plethora of management options open up, and you can do a lot of things using PowerShell.
 
-This is for you.
+BUT! If you just configured a Remote Desktop Gateway, to access computers inside of an organization, or at home, then you don't get any of these PowerShell commandlets, which really hampers automation.
+
+Luckily, there exists a way to update SSL Certificates using PowerShell even if you don't have an RD Broker. 
+
+1) Downlaod the script from the Releases.
+2) Open up Certify, and select your "Default Web Site" IIS site. 
+3) Check the box for "Advanced Options"
+4) Click Scripting
+5) Add this script to the "Post-Request" section. 
 
 
-This is an addon for CertifyTheWeb. Certify automatically updates your SSL Certificate in IIS, and this script will take that certificate and inject it into Remote Desktop Gateway! 
