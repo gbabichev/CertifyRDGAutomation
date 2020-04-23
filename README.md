@@ -13,7 +13,7 @@ BUT! If you just configured a Remote Desktop Gateway, to access computers inside
 
 Luckily, there exists a way to update SSL Certificates using PowerShell even if you don't have an RD Broker. 
 
-1) Downlaod the script from the Releases.
+1) Download the script from the Releases.
 2) Open up Certify, and select your "Default Web Site" IIS site. 
 3) Check the box for "Advanced Options"
 4) Click Scripting
